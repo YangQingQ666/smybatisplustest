@@ -20,7 +20,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public boolean insertUser(User user) {
         int insert = this.userMapper.insert(user);
-        int i=5/0;
         return insert>0;
     }
 
